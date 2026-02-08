@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - BUT Réseaux & Télécoms (ROM)</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="./index.html" class="logo">Portfolio</a>
+      
+      <nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./pages/competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./pages/competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./pages/competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./pages/competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./pages/competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./pages/liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./pages/cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PAGE: ACCUEIL -->
+    <section class="hero">
+      <div class="container">
+        <h1>VARGIU Matteo</h1>
+        <p>BUT Réseaux & Télécoms - Parcours ROM - 3e année en alternance</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Présentation</h2>
+        </div>
+        <div class="card">
+          <p id="home-presentation">
+            Bienvenue sur la page d'accueil de mon portfolio professionnel. Vous trouverez ici les différentes compétences de ma formation BUT Réseaux et Télécommunications que j'effectue à l'IUT de Colmar en alternance chez Vialis à Colmar.
+          </p>
+          <p style="color: var(--color-text-light); margin-top: 16px;">
+            Ci-dessous, vous pouvez accéder aux différentes compétences de ma formation afin de voir comment j'ai pu les valider au cours de ces trois années. Vous retrouverez aussi la liste de toutes les SAE que j'ai réalisées pour voir dans quel compétences elles se trouvent, ainsi que mon CV en français et en anglais.
+          </p>
+        </div>
+
+        <div class="card" style="margin-top: 24px; background: linear-gradient(135deg, var(--color-bg) 0%, rgba(124, 58, 237, 0.05) 100%);">
+          <h3 style="margin-bottom: 16px;">Qui suis-je ?</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 24px; align-items: center;">
+            <!-- Photo -->
+            <div style="text-align: center;">
+              <img src="./assets/moi.png" alt="Photo de Matteo Vargiu" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+            </div>
+            <!-- Texte -->
+            <div>
+              <p style="color: var(--color-text-light); line-height: 1.8;">
+                Je m'appelle Matteo VARGIU et je suis actuellement en BUT Réseaux & Télécommunications (R&T). Je viens d'un baccalauréat général, avec les spécialités Mathématiques et Numérique et Sciences Informatiques (NSI), ce qui m'a donné de bonnes bases en logique, en analyse et en informatique.
+              </p>
+              <p style="color: var(--color-text-light); margin-top: 12px; line-height: 1.8;">
+                En dehors de mes études, je suis quelqu'un de très actif : je pratique le tennis en club, l'escalade et la course à pied, des sports qui m'apprennent la régularité, l'endurance et le dépassement de soi. Je suis aussi passionné par les voyages et la photographie, deux activités qui me permettent de découvrir de nouveaux environnements, de prendre du recul et de développer mon sens de l'observation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Comment lire ce portfolio</h2>
+        </div>
+        <div class="card">
+          <p>
+            Ce portfolio est structuré autour de <strong>5 compétences</strong> du référentiel BUT R&T parcours ROM.
+            Chaque compétence détaille :
+          </p>
+          <ul style="margin-left: 24px; color: var(--color-text-light);">
+            <li>Les situations professionnelles</li>
+            <li>Les SAE validant la compétence</li>
+            <li>Les composantes essentielles</li>
+            <li>Les apprentissages critiques (groupés par année)</li>
+            <li>Le détail des SAE avec preuves</li>
+          </ul>
+          <p style="margin-top: 16px;">
+            <strong>Conseil :</strong> Commencez par une compétence qui vous intéresse, puis explorez les SAE détaillées.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mes 5 Compétences</h2>
+        </div>
+        <div class="card-grid" id="competences-grid">
+          <!-- Généré par JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Portfolio</h3>
+        <p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul style="list-style: none;">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./pages/competence-1.html">Compétences</a></li>
+          <li><a href="./pages/liste-sae.html">Liste des SAE</a></li>
+          <li><a href="./pages/cv.html">CV</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul style="list-style: none;">
+          <li><a href="mailto:vargiumatteo05@gmail.com">Email</a></li>
+          <li><a href="https://github.com/matteov05" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/matteo-vargiu-347222299/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="./js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const response = await fetch('./data/competences.json');
+        const data = await response.json();
+        const grid = document.getElementById('competences-grid');
+        
+        if (grid) {
+          grid.innerHTML = data.competences.map(comp => `
+            <div class="card">
+              <div style="font-size: 32px; margin-bottom: 12px;">
+                ${comp.emoji || '📌'}
+              </div>
+              <h3>${comp.id}. ${comp.title}</h3>
+              <a href="./pages/competence-${comp.id}.html" class="btn btn-secondary btn-sm">
+                Voir en détail
+              </a>
+            </div>
+          `).join('');
+        }
+      } catch (error) {
+        console.error('Erreur:', error);
+      }
+      
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+Router#sh run
+Building configuration...
+
+Current configuration : 2458 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+!
+resource policy
+!
+memory-size iomem 25
+ip subnet-zero
+!
+!
+ip cef
+no ip dhcp use vrf connected
+ip dhcp excluded-address 10.252.8.1 10.252.8.10
+ip dhcp excluded-address 10.252.8.65 10.252.8.74
+ip dhcp excluded-address 10.252.8.129 10.252.8.138
+ip dhcp excluded-address 10.252.8.193 10.252.8.202
+!
+ip dhcp pool USERS
+   network 10.252.8.64 255.255.255.192
+   default-router 10.252.8.65
+   dns-server 10.252.8.130
+!
+ip dhcp pool VOIX
+   network 10.252.8.0 255.255.255.192
+   default-router 10.252.8.1
+   dns-server 10.252.8.130
+!
+ip dhcp pool SERVER
+   network 10.252.8.128 255.255.255.192
+   default-router 10.252.8.129
+   dns-server 10.252.8.130
+!
+ip dhcp pool ADMIN
+   network 10.252.8.192 255.255.255.192
+   default-router 10.252.8.193
+   dns-server 10.252.8.130
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.252.8.1 255.255.255.192
+ ip access-group 102 out
+ ip nat inside
+ no snmp trap link-status
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 10.252.8.65 255.255.255.192
+ ip access-group 100 in
+ ip access-group 102 out
+ ip nat inside
+ no snmp trap link-status
+!
+interface GigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 10.252.8.129 255.255.255.192
+ ip access-group 102 out
+ ip nat inside
+ no snmp trap link-status
+!
+interface GigabitEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 10.252.8.193 255.255.255.192
+ ip access-group 102 out
+ ip nat inside
+ no snmp trap link-status
+!
+interface GigabitEthernet0/1
+ ip address dhcp
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface BRI0/2/0
+ no ip address
+ shutdown
+!
+interface Serial0/3/0
+ no ip address
+ shutdown
+!
+interface Serial0/3/1
+ no ip address
+ shutdown
+ clock rate 125000
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/1
+!
+ip http server
+ip nat inside source list 1 interface GigabitEthernet0/1 overload
+!
+access-list 1 permit 10.252.8.0 0.0.0.255
+access-list 100 deny   ip 10.252.8.64 0.0.0.63 10.252.8.192 0.0.0.63
+access-list 100 permit ip any any
+access-list 102 deny   ip host 91.211.165.100 any
+access-list 102 permit ip any any
+!
+control-plane
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+scheduler allocate 20000 1000
+!
+end
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ3.02_FA - Développer des applications communicantes</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-3.html">Compétence 3</a> <span>/</span> <span>SAÉ3.02_FA</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAÉ3.02_FA - Développer des applications communicantes</h2>
+        </div>
+
+        <!-- Objectif du projet -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectif du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Cette SAE avait pour objectif de concevoir une architecture distribuée multi-serveurs capable de compiler et d'exécuter des programmes envoyés par des clients à distance. L'application devait reposer sur un modèle client/serveur, avec un client disposant d'une interface graphique intuitive, et un ou plusieurs serveurs capables de gérer les requêtes de manière isolée. Dans la version simplifiée, le projet consistait à faire en sorte qu'un serveur accepte ou refuse une requête en fonction de sa disponibilité, puis compile ou exécute un programme (en C, Python ou Java) et renvoie le résultat au client. L'ensemble devait être documenté et utilisable par une personne sans assistance.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC22.05</strong></span> | J'ai dû interpréter un cahier des charges et prendre des décisions techniques tout en respectant les objectifs fixés.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC23.02</strong></span> | J'ai conçu l'application client avec une interface graphique fonctionnelle à partir des contraintes fonctionnelles données dans le sujet.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC23.03</strong></span> | Le cœur du projet repose sur l'utilisation des sockets TCP et de la programmation via les threads.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC23.04</strong></span> | Appliqué de manière indirecte : le serveur gère et traite les fichiers envoyés par les clients, les stocke temporairement, les exécute, puis les supprime.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC23.05</strong></span> | Implémenté via l'interface graphique du client, qui permet d'accéder localement à un fichier, de le transmettre au serveur et d'en récupérer le résultat.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            J'ai développé la solution en Python, avec comme dépendance externe la bibliothèque PyQt5 pour l'interface graphique du client. Le client permet à l'utilisateur de choisir un fichier, d'indiquer une IP et un port, et de l'envoyer à un serveur. Si le serveur est occupé, un message d'erreur s'affiche, et l'utilisateur peut se connecter à un autre serveur sans redémarrer l'application.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Côté serveur, j'ai conçu un code capable d'écouter, de détecter le langage du fichier, de le compiler si nécessaire (via gcc, javac etc.) et d'exécuter le programme. Le résultat ou l'erreur est ensuite renvoyé au client. Le tout fonctionne via des sockets avec une gestion des threads côté serveur pour éviter le blocage des traitements.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Enfin, j'ai produit une documentation d'installation détaillée expliquant toutes les étapes nécessaires pour installer les dépendances, lancer les codes et utiliser le projet sur différents systèmes d'exploitation. Une vidéo de démonstration accompagne également le livrable.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Cette SAE m'a permis de consolider mes connaissances en programmation réseau, notamment en manipulant des sockets et en gérant la communication entre plusieurs processus. J'ai également appris à utiliser la bibliothèque PyQt5 pour créer une interface graphique complète, ce qui m'a permis de rendre l'interaction plus fluide et intuitive.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Le traitement des programmes côté serveur m'a amené à comprendre comment gérer différents langages, compiler ou exécuter des fichiers en fonction de leur extension, et interagir avec le système via Python. J'ai également appris à structurer un projet, à documenter correctement mon travail, et à anticiper les erreurs d'exécution. Enfin, j'ai amélioré mes capacités à interpréter un cahier des charges, et à rendre un projet compréhensible et exploitable par une autre personne que moi.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            D'un point de vue personnel, le projet a été un défi intéressant mais très dur à gérer. Certaines étapes ont été plus complexes que prévu, notamment la gestion des threads et des sockets, qui m'ont demandé plusieurs recherches et essais avant d'arriver à une solution fonctionnelle.
+          </p>
+        </div>
+
+        <!-- Documentation et fichiers -->
+        <div style="background-color: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; margin-bottom: 16px; border-left: 4px solid var(--color-primary);">
+          <p style="color: var(--color-text-light); margin: 0;"><strong style="color: var(--color-primary);">📄 Documentation :</strong></p>
+          <p style="color: var(--color-text-light); margin-top: 8px; margin-bottom: 6px;">
+            <a href="../assets/doc_install.pdf" target="_blank" style="color: var(--color-primary); text-decoration: underline;">📋 Document d'installation</a>
+          </p>
+          <p style="color: var(--color-text-light); margin: 0;">
+            <a href="../assets/doc_reponse .pdf" target="_blank" style="color: var(--color-primary); text-decoration: underline;">📋 Document de réponse</a>
+          </p>
+        </div>
+
+        <div style="background-color: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; margin-bottom: 32px; border-left: 4px solid var(--color-primary);">
+          <p style="color: var(--color-text-light); margin: 0;"><strong style="color: var(--color-primary);">💻 Code source :</strong></p>
+          <p style="color: var(--color-text-light); margin-top: 8px; margin-bottom: 6px;">
+            <a href="../assets/clientsae302.py" download style="color: var(--color-primary); text-decoration: underline;">⬇️ Client SAE302</a>
+          </p>
+          <p style="color: var(--color-text-light); margin: 0;">
+            <a href="../assets/serveursae302.py" download style="color: var(--color-primary); text-decoration: underline;">⬇️ Serveur SAE302</a>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-3.html" class="btn btn-secondary">Retour à la compétence 3</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

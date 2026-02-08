@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE4.ROM.01 - Déployer une infrastructure opérateur et ses services</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-4.html">Compétence 4</a> <span>/</span> <span>SAE4.ROM.01</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAE4.ROM.01 - Déployer une infrastructure opérateur et ses services</h2>
+        </div>
+
+        <!-- Objectifs -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectifs du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            L'objectif de cette SAE est de simuler le déploiement d'une infrastructure opérateur complète, capable de fournir différents services clients tels que l'accès Internet, la téléphonie IP, la vidéo à la demande (VoD), l'IPTV et des services web. Le travail est réalisé dans un contexte multi-sites, avec une interconnexion sécurisée entre les sites, du routage multicast pour la diffusion vidéo, du routage dynamique, et une gestion des services via des conteneurs Docker.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.01ROM</strong></span> | Activé via la configuration de l'infrastructure réseau de chaque site, et des liaisons entre eux.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.02ROM</strong></span> | Essentiel dans ma partie du projet : tous les services sont déployés avec des conteneurs Docker.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.03ROM</strong></span> | Mise en place de plusieurs services : Internet, VoIP, IPTV, VoD, hébergement web.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.04ROM</strong></span> | Appliqué par l'interconnexion des services sur l'infrastructure réseau, l'intégration du routage OSPF et multicast.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.05ROM</strong></span> | Mis en œuvre à travers les fichiers de déploiement Docker (Dockerfile), facilitant la mise en place des services.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; white-space: pre-wrap;">
+Cette SAE est réalisée en binôme. Pour ma part, je m'occupe de la création et du déploiement des conteneurs Docker avec les différents services destinés aux clients. Parmi ces services, on retrouve :
+
+• Un service VoIP (serveur IPBX ou Asterisk)
+• Un service IPTV, diffusé via multicast avec la configuration du protocole PIM-SM
+• Un service VoD, contenus à la demande
+• Un service Web, site web avec accueil
+
+Les conteneurs sont configurés pour fonctionner en environnement simulé et doivent être interconnectés au reste de l'architecture réseau. La configuration inclut également le bon fonctionnement des flux multicast pour l'IPTV, la communication SIP/RTP pour la VoIP, ainsi que les flux HTTP pour les services web. On a du faire attention à la modularité de l'architecture, à la configuration des réseaux Docker et à la possibilité de redéployer facilement chaque service. Les fichiers Dockerfile et docker-compose.yml sont utilisés pour automatiser le processus.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; white-space: pre-wrap;">
+Cette SAE m'a permis d'améliorer mes compétences en virtualisation, surtout avec Docker. J'ai appris à créer plusieurs services (comme la téléphonie ou la vidéo) dans des conteneurs séparés, à les faire communiquer entre eux et avec le reste du réseau, tout en les gardant bien isolés pour éviter les conflits. Mettre en place des services comme la VoIP ou l'IPTV m'a aussi appris que certains flux ont des besoins particuliers : il faut que ce soit rapide, fluide, et compatible avec les bons protocoles. J'ai découvert par exemple que le routage multicast permet de diffuser de la vidéo à plusieurs personnes en même temps sans surcharger le réseau, et que la téléphonie IP demande de faire attention à certains réglages comme le NAT.
+
+Enfin, j'ai compris à quel point il est important d'automatiser les déploiements dans ce genre de réseau. Grâce à des outils comme docker-compose, on peut déployer plusieurs services rapidement et facilement, ce qui est très utile quand l'infrastructure devient complexe.
+          </p>
+        </div>
+
+        <!-- Image SAE en bas -->
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 32px;">
+          <img src="../assets/iptv.png" alt="SAE4.ROM.01" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-4.html" class="btn btn-secondary">Retour à la compétence 4</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

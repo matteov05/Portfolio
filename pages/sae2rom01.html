@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ2.01 - Construire un réseau informatique pour une petite structure</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-1.html">Compétence 1</a> <span>/</span> <span>SAÉ2.01</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAÉ2.01 - Construire un réseau informatique pour une petite structure</h2>
+        </div>
+
+        <!-- Objectif du projet -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectif du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Le projet mené durant cette SAE a eu pour objectif de consolider notre savoir-faire sur le matériel réseau de niveau deux (commutateur) et trois (routeur). On a dû être capable de construire un réseau local constitué de commutateurs et de routeurs et de mettre en place des règles de sécurité simples.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Dans cette SAE, on a travaillé de manière individuelle et on a utilisé le logiciel GNS3. Il a fallu mettre en place le réseau, déployer des services et mettre en place des règles de sécurité.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC11.02</strong></span> | La segmentation en VLANs, le plan d'adressage IP, le routage inter-VLAN et le DHCP, démontre une compréhension de l'architecture réseau, du codage IP et des protocoles de communication. La configuration des serveurs FTP et web Apache2 illustre les principes du codage et de la fourniture de services sur un réseau.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC11.03</strong></span> | L'ensemble du projet, de la configuration des commutateurs et des routeurs à la mise en place des services. D'autant plus le protocole RIPv2 pour le routage inter-VLAN démontre une compréhension spécifique des techniques de routage.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC11.04</strong></span> | La gestion des services FTP et web Apache2 nécessite une connaissance des principes de fonctionnement des systèmes d'exploitation et de leurs outils d'administration.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC11.05</strong></span> | La mise en œuvre de la sécurité du réseau, y compris la sécurité des ports des commutateurs et les ACL, permet d'identifier les points de défaillance potentiels et de mettre en place des mesures préventives. La surveillance du réseau et la résolution des problèmes rencontrés lors de l'interconnexion des maquettes m'ont développé des compétences en matière de diagnostic et de résolution de dysfonctionnements réseau.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC11.06</strong></span> | Installation des PC dans les VLANs.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            En utilisant le logiciel GNS3, j'ai pu créer un réseau local complet, avec des commutateurs, des routeurs et de divers services, tout en veillant à sa sécurisation. Tout d'abord il a fallu faire la mise en place du réseau. J'ai commencé avec la segmentation du réseau local en créant des VLANs pour séparer en différents groupes. Puis j'ai fait le plan d'adressage IP, on a notamment dû partager avec la classe le réseau 192.168.128.0/20.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Ensuite j'ai évidemment dû faire le routage inter-vlan pour permettre la communication entre les différents VLANs, garantissant une connectivité fluide au sein du réseau. Puis j'ai configuré un serveur DHCP pour attribuer automatiquement des adresses IP aux périphériques connectés au réseau, simplifiant ainsi la gestion IP. Enfin pour finir la mise en place du réseau j'ai interconnecté les équipements de niveau 3, j'ai utilisé le protocole RIPv2 pour échanger des informations de routage entre les routeurs, assurant une convergence efficace du routage.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Dans un second temps j'ai mis en place deux services, un serveur FTP ainsi qu'un serveur web Apache. Ensuite j'ai sécurisé le réseau. J'ai configuré la sécurité des ports des commutateurs en utilisant des ACL pour restreindre l'accès au réseau et limiter les risques de sécurité. J'ai aussi mis en place des ACL supplémentaires sur les routeurs pour filtrer le trafic réseau, renforçant ainsi la protection du réseau.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Finalement, j'ai réussi à interconnecter ma maquette avec celles de mes camarades, créant ainsi un réseau local étendu et fonctionnel.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Cette SAE m'a permis d'approfondir et de mettre en pratique mes compétences en matière de gestion de réseau. La conception d'un réseau local sécurisé ont nécessité la mobilisation de connaissances théoriques acquises en cours, de la configuration réseau, de la gestion de services, de la sécurité réseau et de la résolution de problèmes.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 12px;">
+            Ce projet m'a également permis de remettre en pratique des compétences acquises lors de la SAE 1.02, notamment en ce qui concerne la configuration du serveur DHCP. La mise en œuvre de ces connaissances m'a permis de gagner en efficacité et en autonomie dans la réalisation de ces tâches.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            J'ai notamment beaucoup appris sur les routeurs de niveau 3 que je n'avais jamais manipulé.
+          </p>
+        </div>
+
+        <!-- Image topologie -->
+        <div style="text-align: center; margin-top: 32px; margin-bottom: 32px;">
+          <img src="../assets/topologie.png" alt="Topologie du réseau" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+          <div style="margin-top: 12px; color: var(--color-text-light); font-size: 13px;"><em>Topologie</em></div>
+        </div>
+
+        <!-- Fichier GNS3 téléchargeable -->
+        <div style="background-color: rgba(124, 58, 237, 0.05); padding: 16px; border-radius: 8px; margin-bottom: 32px; border-left: 4px solid var(--color-primary);">
+          <p style="color: var(--color-text-light); margin: 0;"><strong style="color: var(--color-primary);">📦 Fichiers du projet :</strong></p>
+          <p style="color: var(--color-text-light); margin-top: 8px;">
+            <a href="../assets/SAEGNS.gns3project" download style="color: var(--color-primary); text-decoration: underline;">⬇️ Projet GNS3 (SAEGNS.gns3project)</a>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-1.html" class="btn btn-secondary">Retour à la compétence 1</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

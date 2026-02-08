@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE3.ROM.04_FA - Déployer un service de téléphonie multi-sites</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-5.html">Compétence 5</a> <span>/</span> <span>SAE3.ROM.04_FA</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAE3.ROM.04_FA - Déployer un service de téléphonie multi-sites</h2>
+        </div>
+
+        <!-- Image SAE -->
+        <div style="text-align: center; margin-bottom: 32px;">
+          <img src="../assets/note304.png" alt="SAE3.ROM.04_FA" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+        </div>
+
+        <!-- Objectifs -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectifs du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            L'objectif de cette SAE était de déployer un système de téléphonie IP multi-sites adapté pour une maison médicale, en utilisant un serveur IPBX Asterisk. Ce système devait permettre de gérer la communication entre plusieurs cabinets, via un plan de numérotation interne, des appels inter-sites, des fonctions téléphoniques avancées (transfert, mise en attente, enregistrement, interception), des boîtes vocales, et un menu vocal interactif. Le projet visait à mettre en œuvre un système complet de ToIP, incluant la configuration des équipements (téléphones logiciels et matériels), le routage, l'interconnexion inter-sites, ainsi que des services à valeur ajoutée comme les notifications vocales ou les messages par e-mail.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC25.01ROM</strong></span> | Appliqué à travers le déploiement complet d'un système IPBX Asterisk avec tous les services de base et avancés.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC25.02ROM</strong></span> | Gestion des utilisateurs SIP, des boîtes vocales, des touches rapides, et du serveur de messagerie.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC25.03ROM</strong></span> | Gestion des codecs audio, de la présence SIP, et de la configuration des transports UDP pour minimiser la latence.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.03ROM</strong></span> | Mise en place d'une architecture multi-sites simulée avec des liens SIP vers un opérateur fictif.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC24.04ROM</strong></span> | Configuration du plan de numérotation interne, des appels inter-sites et des transferts d'appel.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; white-space: pre-wrap;">
+J'ai commencé par installer et configurer le serveur IPBX Asterisk sur une machine virtuelle. J'y ai déclaré plusieurs utilisateurs SIP (Praticien, Assistant, Secrétaire) dans les fichiers "pjsip_wiard.conf" et "extensions.conf", afin de faire un plan de numérotation interne. Chaque utilisateur était identifiable par un numéro, et j'ai vérifié leur enregistrement via la commande "pjsip show endpoints". Ensuite, j'ai configuré trois terminaux : un téléphone logiciel (Linphone) et deux téléphones matériels (Yealink T31P et Nortel LIP6812). Chaque appareil a été connecté au serveur via son interface web ou ses paramètres internes, et des touches programmables ont été ajoutées pour simplifier les transferts, la mise en attente et l'interception. Pour assurer les communications inter-sites, j'ai défini une connexion SIP entre IPBX dans pjsip_wizard.conf, en ajoutant une section opérateur et des règles de routage dans extensions.conf. Cela m'a permis de passer des appels avec mes camarades entre cabinets médicaux simulés.
+
+J'ai également activé plusieurs fonctions avancées : transfert d'appel (Tt), mise en attente avec musique personnalisée (configuration de musiconhold.conf), interception d'appel via les groupes call_group et pickup_group, enregistrement de conversation (Ww), et messagerie vocale. Les utilisateurs pouvaient accéder à leur boîte via des touches dédiées, et les messages vocaux étaient transmis automatiquement à l'adresse mail de la secrétaire par un serveur Dovecot IMAP. Enfin, j'ai commencé la configuration d'un menu vocal interactif pour la prise de rendez-vous, avec enregistrement des messages via le téléphone Yealink. Bien que ce menu n'ait pas pu être finalisé (manque de l'intégration à un calendrier), les bases fonctionnelles étaient en place.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; white-space: pre-wrap;">
+Ce projet m'a permis de maîtriser la configuration complète d'un serveur Asterisk, de la config SIP jusqu'à la gestion des fonctionnalités complexes d'un service ToIP. J'ai appris à manipuler les fichiers de configuration (pjsip_wizard.conf, extensions.conf, voicemail.conf, etc.) et à personnaliser les fonctions téléhponiques. Travailler avec différents types de terminaux m'a aussi familiarisé avec les interfaces d'administration de téléphones professionnels. Le plus gros défi a été de diagnostiquer les erreurs de configuration : une ligne mal placée pouvait bloquer tout un service. J'ai ainsi progressé en rigueur et dépannage. J'ai aussi découvert l'importance de la communication inter-sites dans un environnement d'entreprise, avec les problématiques de routage, d'authentification et de messagerie.
+
+D'un point de vue personnel, j'ai adoré réaliser cette SAE car on a mis en place une réelle infrastructure complète et fonctionnelle, le côté personnalisation a aussi été un point que j'ai aimé.
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-5.html" class="btn btn-secondary">Retour à la compétence 5</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

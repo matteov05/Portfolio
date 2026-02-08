@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétence 2 - Portfolio</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      
+      <nav>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a>
+          <span>/</span>
+          <span>Connecter les entreprises et les usagers</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>🔗 Connecter les entreprises et les usagers</h2>
+        </div>
+
+        <!-- Situations Professionnelles & SAE Validant -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+          <div class="card">
+            <h3 style="margin-bottom: 12px;">Situations professionnelles :</h3>
+            <p id="comp-situations">[PLACEHOLDER - À ajouter]</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 12px;">SAE validant cette compétence :</h3>
+            <div id="comp-sae-list" style="color: var(--color-text-light);">
+              [À ajouter]
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Colonnes: Composantes & AC -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+          <!-- Colonne Gauche: Composantes essentielles -->
+          <div>
+            <h3 style="margin-bottom: 16px;">Les composantes essentielles :</h3>
+            <div class="card">
+              <div id="comp-composantes" style="color: var(--color-text-light);">
+                [PLACEHOLDER - À ajouter]
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne Droite: Apprentissages Critiques -->
+          <div>
+            <h3 style="margin-bottom: 16px;">Les apprentissages critiques :</h3>
+            <div id="comp-ac"></div>
+          </div>
+        </div>
+
+        <!-- SAE Détaillées -->
+        <section class="section">
+          <h3>Détail des SAE</h3>
+          <div id="comp-sae-detail" class="card-grid">
+            <div class="card" style="text-align: center; padding: 40px; color: var(--color-text-light);">
+              Aucune SAE détaillée ajoutée pour le moment
+            </div>
+          </div>
+        </section>
+
+        <!-- Entreprise - Vialis -->
+        <div class="card" style="margin-bottom: 32px; background-color: rgba(34, 197, 94, 0.05); border-left: 4px solid var(--color-accent);">
+          <h3 style="margin-bottom: 20px; color: var(--color-accent);">Entreprise - Vialis</h3>
+          
+          <div style="margin-bottom: 20px;">
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Déploiement des supports et systèmes de transmission</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Lors de certaines interventions, je suis amené à manipuler des câbles coaxial et à vérifier les branchements dans les armoires. Je dois m'assurer que le signal passe bien et que les équipements sont correctement connectés. Ces actions me permettent de mieux comprendre comment est la transmission entre le réseau de Vialis et les équipements des clients.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Mise en service et administration des équipements d'accès fixe ou mobile d'un opérateur</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              C'est une mission que je fais très souvent. Quand je suis appelé pour une panne ou une installation, je dois m'occuper de la box Internet ou du décodeur TV. Je vérifie qu'ils fonctionnent bien, je les configure si nécessaire, et je teste les services avec le client. Cela m'a appris à être à l'aise avec les équipements d'accès fixe, à comprendre leurs réglages et à identifier rapidement les sources de problème.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Déploiement et administration des accès sans fil pour l'entreprise</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Dans certains cas, je suis amené à vérifier ou optimiser le réseau Wi-Fi des clients, surtout lorsqu'ils ont des problèmes de connexion. Cela passe par des conseils de placement d'équipements, ou la vérification des interférences. J'ai aussi eu l'occasion de pouvoir installer des kit CPL. Ces expériences m'ont permis de mieux comprendre le fonctionnement des réseaux sans fil et les contraintes qu'ils peuvent avoir selon l'environnement.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Déploiement des systèmes de communications</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Je participe également au projet de vidéoprotection chez Vialis, qui implique l'installation de caméras et la transmission des flux vidéo. Même si je ne gère pas toute la configuration et l'installation, cela me permet d'avoir un aperçu des systèmes de communication utilisés dans les environnements professionnels.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="../index.html" class="btn btn-secondary">Retour à l'accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Portfolio</h3>
+        <p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Navigation</h3>
+        <ul style="list-style: none;">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="./competence-1.html">Compétences</a></li>
+          <li><a href="./cv.html">CV</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul style="list-style: none;">
+          <li><a href="mailto:contact@example.com">Email</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const response = await fetch('../data/competences.json');
+        const data = await response.json();
+        const comp = data.competences[1]; // Compétence 2
+        
+        // Situations professionnelles
+        const sitElem = document.getElementById('comp-situations');
+        if (sitElem && comp.situations_professionnelles) {
+          const sitHTML = Array.isArray(comp.situations_professionnelles)
+            ? `<ul style="margin-left: 20px;">${comp.situations_professionnelles.map(s => `<li>${s}</li>`).join('')}</ul>`
+            : comp.situations_professionnelles;
+          sitElem.innerHTML = sitHTML;
+        }
+
+        // SAE validant - avec code surlighté
+        const saeListElem = document.getElementById('comp-sae-list');
+        if (saeListElem && comp.sae_validant && comp.sae_validant.length > 0) {
+          let saeHTML = '<ul style="margin-left: 20px;">';
+          comp.sae_validant.forEach(s => {
+            saeHTML += `<li><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${s.code}</strong></span> - ${s.text}</li>`;
+          });
+          saeHTML += '</ul>';
+          saeListElem.innerHTML = saeHTML;
+        }
+
+        // Composantes
+        const compElem = document.getElementById('comp-composantes');
+        if (compElem && comp.composantes_essentielles && comp.composantes_essentielles.length > 0) {
+          let compHTML = '<ul style="margin-left: 20px;">';
+          comp.composantes_essentielles.forEach(c => {
+            const style = 'background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;';
+            compHTML += `<li style="margin-bottom: 8px;"><span style="${style}"><strong>${c.code}</strong></span> | ${c.text}</li>`;
+          });
+          compHTML += '</ul>';
+          compElem.innerHTML = compHTML;
+        }
+
+        // AC
+        const acElem = document.getElementById('comp-ac');
+        if (acElem) {
+          const acItems = [];
+          
+          if (comp.apprentissages_critiques.but1) {
+            let but1HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but1.items.forEach(ac => {
+              but1HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but1HTML += '</ul>';
+            acItems.push({
+              title: `BUT 1 : ${comp.apprentissages_critiques.but1.title}`,
+              content: but1HTML
+            });
+          }
+          
+          if (comp.apprentissages_critiques.but2) {
+            let but2HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but2.items.forEach(ac => {
+              but2HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but2HTML += '</ul>';
+            acItems.push({
+              title: `BUT 2 : ${comp.apprentissages_critiques.but2.title}`,
+              content: but2HTML
+            });
+          }
+          
+          if (comp.apprentissages_critiques.but3) {
+            let but3HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but3.items.forEach(ac => {
+              but3HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but3HTML += '</ul>';
+            acItems.push({
+              title: `BUT 3 : ${comp.apprentissages_critiques.but3.title}`,
+              content: but3HTML
+            });
+          }
+
+          if (acItems.length > 0) {
+            acElem.innerHTML = Component.createAccordion(acItems);
+            initAccordions();
+          }
+        }
+
+        // SAE Detail - Bulles avec le même design que les compétences
+        const saeDetailGrid = document.getElementById('comp-sae-detail');
+        if (saeDetailGrid) {
+          const saeDetailData = [
+            {
+              emoji: '📡',
+              code: 'SAÉ1.03',
+              title: 'Découvrir un dispositif de transmission',
+              link: './sae1rom03.html'
+            },
+            {
+              emoji: '📱',
+              code: 'SAÉ3.01',
+              title: 'Mettre en œuvre un système de transmission',
+              link: './sae3rom01.html'
+            },
+            {
+              emoji: '📦',
+              code: 'SAÉ2.04',
+              title: 'Projet Intégratif (projet de fin de 1ère année)',
+              link: './sae2rom04.html'
+            }
+          ];
+          
+          saeDetailGrid.innerHTML = saeDetailData.map(sae => `
+            <div class="card">
+              <div style="font-size: 24px; margin-bottom: 12px;">${sae.emoji}</div>
+              <h3 style="font-size: 14px; margin-bottom: 8px;">${sae.code}</h3>
+              <p style="font-size: 13px; color: var(--color-text-light); margin-bottom: 12px;">${sae.title}</p>
+              <a href="${sae.link}" class="btn btn-secondary btn-sm">
+                Voir en détail
+              </a>
+            </div>
+          `).join('');
+        }
+      } catch (error) {
+        console.error('Erreur:', error);
+      }
+      
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

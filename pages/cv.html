@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Portfolio</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <span>CV Français</span>
+        </nav>
+        <div class="section-header">
+          <h2>Mon CV - Français</h2>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <p style="color: var(--color-text-light); margin-bottom: 24px;">
+            Mon CV en format PDF - Cliquez sur le bouton ci-dessous pour le télécharger ou le visualiser
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="../assets/CV-FR.pdf" class="btn btn-primary" download>Télécharger CV</a>
+            <a href="../assets/CV-FR.pdf" class="btn btn-secondary" target="_blank">Ouvrir en ligne</a>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px; border-top: 2px solid var(--color-border); padding-top: 32px;">
+          <iframe src="../assets/CV-FR.pdf" style="width: 100%; height: 600px; border: 1px solid var(--color-border); border-radius: 8px;"></iframe>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+          <a href="../index.html" class="btn btn-secondary">Retour à l'accueil</a>
+          <a href="./cv-en.html" class="btn btn-primary" style="margin-left: 12px;">Version Anglaise</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

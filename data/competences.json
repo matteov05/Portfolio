@@ -1,0 +1,281 @@
+{
+  "competences": [
+    {
+      "id": 1,
+      "slug": "administrer-reseaux-internet",
+      "title": "Administrer les réseaux et l'Internet",
+      "emoji": "🌐",
+      "situations_professionnelles": [
+        "Conception et administration de l'infrastructure du réseau informatique d'une entreprise",
+        "Installation et administration des services réseau informatique d'une entreprise",
+        "Déploiement et administration des solutions fixes pour les clients d'un opérateur de télécommunication"
+      ],
+      "sae_validant": [
+        { "code": "SAE1.01", "text": "Sensibilisation à l'hygiène informatique et à la cybersécurité" },
+        { "code": "SAE1.02", "text": "S'initier aux réseaux informatiques" },
+        { "code": "SAE2.01", "text": "Construire un réseau informatique pour une petite structure" },
+        { "code": "SAE3.ROM.03_FA", "text": "Concevoir un réseau informatique adapté au multimédia" },
+        { "code": "SAE5.01", "text": "Concevoir, réaliser et présenter une solution technique" }
+      ],
+      "composantes_essentielles": [
+        { "code": "CE1.01", "text": "en choisissant les solutions et technologies réseaux adaptées", "highlight": false },
+        { "code": "CE1.02", "text": "en respectant les principes fondamentaux de la sécurité informatique", "highlight": false },
+        { "code": "CE1.03", "text": "en utilisant une approche rigoureuse pour la résolution des dysfonctionnements", "highlight": true },
+        { "code": "CE1.04", "text": "en respectant les règles métiers", "highlight": false },
+        { "code": "CE1.05", "text": "en assurant une veille technologique", "highlight": false }
+      ],
+      "apprentissages_critiques": {
+        "but1": {
+          "title": "Assister l'administrateur du réseau",
+          "items": [
+            { "code": "AC11.01", "text": "Maîtriser les lois fondamentales de l'électricité afin d'intervenir sur des équipements de réseaux et télécommunications" },
+            { "code": "AC11.02", "text": "Comprendre l'architecture et les fondements des systèmes numériques, les principes du codage de l'information, des communications et de l'Internet" },
+            { "code": "AC11.03", "text": "Configurer les fonctions de base du réseau local" },
+            { "code": "AC11.04", "text": "Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis" },
+            { "code": "AC11.05", "text": "Identifier les dysfonctionnements du réseau local et savoir les signaler" },
+            { "code": "AC11.06", "text": "Installer un poste client, expliquer la procédure mise en place" }
+          ]
+        },
+        "but2": {
+          "title": "Administrer un réseau",
+          "items": [
+            { "code": "AC21.01", "text": "Configurer et dépanner le routage dynamique dans un réseau" },
+            { "code": "AC21.02", "text": "Configurer et expliquer une politique simple de QoS et les fonctions de base de la sécurité d'un réseau" },
+            { "code": "AC21.03", "text": "Déployer des postes clients et des solutions virtualisées adaptées à une situation donnée" },
+            { "code": "AC21.04", "text": "Déployer des services réseaux avancés" },
+            { "code": "AC21.05", "text": "Identifier les réseaux opérateurs et l'architecture d'Internet" },
+            { "code": "AC21.06", "text": "Travailler en équipe pour développer ses compétences professionnelles" }
+          ]
+        },
+        "but3": {
+          "title": "Concevoir un réseau",
+          "items": [
+            { "code": "AC31.01", "text": "Concevoir un projet de réseau informatique d'une entreprise en intégrant les problématiques de haute disponibilité, de QoS, de sécurité et de supervision" },
+            { "code": "AC31.02", "text": "Réaliser la documentation technique de ce projet" },
+            { "code": "AC31.03", "text": "Réaliser une maquette de démonstration du projet" },
+            { "code": "AC31.04", "text": "Défendre/argumenter un projet" },
+            { "code": "AC31.05", "text": "Communiquer avec les acteurs du projet" },
+            { "code": "AC31.06", "text": "Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais" }
+          ]
+        }
+      },
+      "sae_detail": []
+    },
+    {
+      "id": 2,
+      "slug": "connecter-entreprises-usagers",
+      "title": "Connecter les entreprises et les usagers",
+      "emoji": "🔗",
+      "situations_professionnelles": [
+        "Déploiement des supports et systèmes de transmission",
+        "Mise en service et administration des équipements d'accès fixe ou mobile d'un opérateur de télécommunications",
+        "Déploiement et administration des accès sans fil pour l'entreprise",
+        "Déploiement des systèmes de communications"
+      ],
+      "sae_validant": [
+        { "code": "SAE1.03", "text": "Découvrir un dispositif de transmission" },
+        { "code": "SAE3.01", "text": "Mettre en oeuvre un système de transmission" }
+      ],
+      "composantes_essentielles": [
+        { "code": "CE2.01", "text": "en communiquant avec le client et les différents acteurs impliqués, parfois en anglais", "highlight": false },
+        { "code": "CE2.02", "text": "en faisant preuve d'une démarche scientifique", "highlight": false },
+        { "code": "CE2.03", "text": "en choisissant les solutions et technologies adaptées", "highlight": false },
+        { "code": "CE2.04", "text": "en proposant des solutions respectueuses de l'environnement", "highlight": false }
+      ],
+      "apprentissages_critiques": {
+        "but1": {
+          "title": "Découvrir les transmissions et la ToIP",
+          "items": [
+            { "code": "AC12.01", "text": "Mesurer, analyser et commenter les signaux" },
+            { "code": "AC12.02", "text": "Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement" },
+            { "code": "AC12.03", "text": "Déployer des supports de transmission" },
+            { "code": "AC12.04", "text": "Connecter les systèmes de ToIP" },
+            { "code": "AC12.05", "text": "Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur" }
+          ]
+        },
+        "but2": {
+          "title": "Maîtriser les différentes composantes des solutions de connexion des entreprises et des usagers",
+          "items": [
+            { "code": "AC22.01", "text": "Déployer et caractériser des systèmes de transmissions complexes" },
+            { "code": "AC22.02", "text": "Mettre en place un accès distant sécurisé" },
+            { "code": "AC22.03", "text": "Mettre en place une connexion multi-site via un réseau opérateur" },
+            { "code": "AC22.04", "text": "Déployer des réseaux d'accès des opérateurs" },
+            { "code": "AC22.05", "text": "Capacité à questionner un cahier des charges RT" }
+          ]
+        },
+        "but3": {
+          "title": "Déployer une solution de connexion ou de communication sur IP",
+          "items": [
+            { "code": "AC32.01", "text": "Déployer un système de communication pour l'entreprise" },
+            { "code": "AC32.02", "text": "Déployer un réseau d'accès sans fil pour le réseau d'entreprise en intégrant les enjeux de la sécurité" },
+            { "code": "AC32.03", "text": "Déployer un réseau d'accès fixe ou mobile pour un opérateur de télécommunications en intégrant la sécurité" },
+            { "code": "AC32.04", "text": "Permettre aux collaborateurs de se connecter de manière sécurisée au système d'information de l'entreprise" },
+            { "code": "AC32.05", "text": "Collaborer en mode projet en français et en anglais" }
+          ]
+        }
+      },
+      "sae_detail": []
+    },
+    {
+      "id": 3,
+      "slug": "creer-outils-applications-rt",
+      "title": "Créer des outils et applications informatiques pour les R&T",
+      "emoji": "💻",
+      "situations_professionnelles": [
+        "Conception, déploiement et maintenance du système d'information d'une entreprise",
+        "Automatisation du déploiement et de la maintenance des outils logiciels",
+        "Développement d'outils informatiques à usage interne d'une équipe"
+      ],
+      "sae_validant": [
+        { "code": "SAE1.04", "text": "Se présenter sur Internet" },
+        { "code": "SAE1.05", "text": "Traiter des données" },
+        { "code": "SAE2.03", "text": "Mettre en place une solution informatique pour l'entreprise" },
+        { "code": "SAE3.02_FA", "text": "Développer des applications communicantes" },
+        { "code": "SAE5.02", "text": "Piloter un projet informatique" }
+      ],
+      "composantes_essentielles": [
+        { "code": "CE3.01", "text": "en étant à l'écoute des besoins du client", "highlight": false },
+        { "code": "CE3.02", "text": "en documentant le travail réalisé", "highlight": false },
+        { "code": "CE3.03", "text": "en utilisant les outils numériques à bon escient", "highlight": false },
+        { "code": "CE3.04", "text": "en choisissant les outils de développement adaptés", "highlight": false },
+        { "code": "CE3.05", "text": "en intégrant les problématiques de sécurité", "highlight": false }
+      ],
+      "apprentissages_critiques": {
+        "but1": {
+          "title": "S'intégrer dans un service informatique",
+          "items": [
+            { "code": "AC13.01", "text": "Utiliser un système informatique et ses outils" },
+            { "code": "AC13.02", "text": "Lire, exécuter, corriger et modifier un programme" },
+            { "code": "AC13.03", "text": "Traduire un algorithme, dans un langage et pour un environnement donné" },
+            { "code": "AC13.04", "text": "Connaître l'architecture et les technologies d'un site Web" },
+            { "code": "AC13.05", "text": "Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix" },
+            { "code": "AC13.06", "text": "S'intégrer dans un environnement propice au développement et au travail collaboratif" }
+          ]
+        },
+        "but2": {
+          "title": "Développer une application R&T",
+          "items": [
+            { "code": "AC23.01", "text": "Automatiser l'administration système avec des scripts" },
+            { "code": "AC23.02", "text": "Développer une application à partir d'un cahier des charges donné, pour le Web ou les périphériques mobiles" },
+            { "code": "AC23.03", "text": "Utiliser un protocole réseau pour programmer une application client/serveur" },
+            { "code": "AC23.04", "text": "Installer, administrer un système de gestion de données" },
+            { "code": "AC23.05", "text": "Accéder à un ensemble de données depuis une application et/ou un site web" }
+          ]
+        },
+        "but3": {
+          "title": "Piloter un projet de développement d'une application R&T",
+          "items": [
+            { "code": "AC33.01", "text": "Élaborer les spécifications techniques et le cahier des charges d'une application informatique" },
+            { "code": "AC33.02", "text": "Mettre en place un environnement de travail collaboratif" },
+            { "code": "AC33.03", "text": "Participer à la formation des utilisateurs" },
+            { "code": "AC33.04", "text": "Déployer et maintenir une solution informatique" },
+            { "code": "AC33.05", "text": "S'informer sur les évolutions et les nouveautés technologiques" },
+            { "code": "AC33.06", "text": "Sécuriser l'environnement numérique d'une application" }
+          ]
+        }
+      },
+      "sae_detail": []
+    },
+    {
+      "id": 4,
+      "slug": "gerer-infrastructures-services-operateurs",
+      "title": "Gérer les infrastructures et les services des réseaux opérateurs",
+      "emoji": "🖥️",
+      "situations_professionnelles": [
+        "Gestion des services d'un ensemble de clients entreprises d'un opérateur",
+        "Gestion du déploiement de nouvelles infrastructures"
+      ],
+      "sae_validant": [
+        { "code": "SAE 4.ROM.01", "text": "Déployer une infrastructure opérateur et ses services" },
+        { "code": "SAE5.ROM.03", "text": "Déployer et gérer les services ROM" }
+      ],
+      "composantes_essentielles": [
+        { "code": "CE4.01", "text": "en respectant les règles métiers et les délais", "highlight": false },
+        { "code": "CE4.02", "text": "en assurant une communication optimale avec le client", "highlight": false },
+        { "code": "CE4.03", "text": "en mettant en place des processus opérationnels de gestion d'incidents", "highlight": false },
+        { "code": "CE4.04", "text": "en pilotant les acteurs terrain", "highlight": false }
+      ],
+      "apprentissages_critiques": {
+        "but1": {
+          "title": "Aucun AC pour BUT 1",
+          "items": []
+        },
+        "but2": {
+          "title": "Gérer les infrastructures des réseaux opérateurs",
+          "items": [
+            { "code": "AC24.01ROM", "text": "Administrer les réseaux d'accès fixes et mobiles" },
+            { "code": "AC24.02ROM", "text": "Virtualiser des services réseaux" },
+            { "code": "AC24.03ROM", "text": "Décrire/comprendre l'architecture et les offres des opérateurs" },
+            { "code": "AC24.04ROM", "text": "Gérer le routage/commutation et les interconnexions" },
+            { "code": "AC24.05ROM", "text": "Automatiser la gestion des équipements réseaux" }
+          ]
+        },
+        "but3": {
+          "title": "Administrer les services des opérateurs de télécommunications",
+          "items": [
+            { "code": "AC34.01ROM", "text": "Administrer/superviser les infrastructures et les services télécom" },
+            { "code": "AC34.02ROM", "text": "Administrer et déployer des fonctions réseaux virtualisées et programmer le réseau" }
+          ]
+        }
+      },
+      "sae_detail": []
+    },
+    {
+      "id": 5,
+      "slug": "gerer-communications-unifiees-video",
+      "title": "Gérer les communications unifiées et la vidéo sur Internet",
+      "emoji": "📹",
+      "situations_professionnelles": [
+        "Déploiement et administration des services de communication",
+        "Administration des services multimédia"
+      ],
+      "sae_validant": [
+        { "code": "SAE3.ROM.04_FA", "text": "Déployer un service de téléphonie multi-sites" }
+      ],
+      "composantes_essentielles": [
+        { "code": "CE5.01", "text": "en automatisant la gestion réseau des communications", "highlight": false },
+        { "code": "CE5.02", "text": "en sécurisant les infrastructures", "highlight": false },
+        { "code": "CE5.03", "text": "en gérant les interconnexions", "highlight": false },
+        { "code": "CE5.04", "text": "en assurant une communication optimale avec le client", "highlight": false },
+        { "code": "CE5.05", "text": "en respectant les règles métiers et les délais", "highlight": false }
+      ],
+      "apprentissages_critiques": {
+        "but1": {
+          "title": "Aucun AC pour BUT 1",
+          "items": []
+        },
+        "but2": {
+          "title": "Mettre en oeuvre le système de téléphonie de l'entreprise",
+          "items": [
+            { "code": "AC25.01ROM", "text": "Choisir une architecture et déployer des services de ToIP" },
+            { "code": "AC25.02ROM", "text": "Administrer un service de téléphonie pour l'entreprise" },
+            { "code": "AC25.03ROM", "text": "Mettre en place une politique de QoS pour les applications" }
+          ]
+        },
+        "but3": {
+          "title": "Administrer les communications unifiées et les services vidéo de l'entreprise",
+          "items": [
+            { "code": "AC35.01ROM", "text": "Administrer les services multimédias pour une entreprise" }
+          ]
+        }
+      },
+      "sae_detail": [
+        {
+          "code": "SAE3.ROM.04_FA",
+          "title": "Déployer un service de téléphonie multi-sites",
+          "image": "note304.png",
+          "objectives": "L'objectif de cette SAE était de déployer un système de téléphonie IP multi-sites adapté pour une maison médicale, en utilisant un serveur IPBX Asterisk. Ce système devait permettre de gérer la communication entre plusieurs cabinets, via un plan de numérotation interne, des appels inter-sites, des fonctions téléphoniques avancées (transfert, mise en attente, enregistrement, interception), des boîtes vocales, et un menu vocal interactif. Le projet visait à mettre en œuvre un système complet de ToIP, incluant la configuration des équipements (téléphones logiciels et matériels), le routage, l'interconnexion inter-sites, ainsi que des services à valeur ajoutée comme les notifications vocales ou les messages par e-mail.",
+          "acs": [
+            { "code": "AC25.01ROM", "text": "Appliqué à travers le déploiement complet d'un système IPBX Asterisk avec tous les services de base et avancés." },
+            { "code": "AC25.02ROM", "text": "Gestion des utilisateurs SIP, des boîtes vocales, des touches rapides, et du serveur de messagerie." },
+            { "code": "AC25.03ROM", "text": "Gestion des codecs audio, de la présence SIP, et de la configuration des transports UDP pour minimiser la latence." },
+            { "code": "AC24.03ROM", "text": "Mise en place d'une architecture multi-sites simulée avec des liens SIP vers un opérateur fictif." },
+            { "code": "AC24.04ROM", "text": "Configuration du plan de numérotation interne, des appels inter-sites et des transferts d'appel." }
+          ],
+          "realization": "J'ai commencé par installer et configurer le serveur IPBX Asterisk sur une machine virtuelle. J'y ai déclaré plusieurs utilisateurs SIP (Praticien, Assistant, Secrétaire) dans les fichiers \"pjsip_wiard.conf\" et \"extensions.conf\", afin de faire un plan de numérotation interne. Chaque utilisateur était identifiable par un numéro, et j'ai vérifié leur enregistrement via la commande \"pjsip show endpoints\". Ensuite, j'ai configuré trois terminaux : un téléphone logiciel (Linphone) et deux téléphones matériels (Yealink T31P et Nortel LIP6812). Chaque appareil a été connecté au serveur via son interface web ou ses paramètres internes, et des touches programmables ont été ajoutées pour simplifier les transferts, la mise en attente et l'interception. Pour assurer les communications inter-sites, j'ai défini une connexion SIP entre IPBX dans pjsip_wizard.conf, en ajoutant une section opérateur et des règles de routage dans extensions.conf. Cela m'a permis de passer des appels avec mes camarades entre cabinets médicaux simulés.\n\nJ'ai également activé plusieurs fonctions avancées : transfert d'appel (Tt), mise en attente avec musique personnalisée (configuration de musiconhold.conf), interception d'appel via les groupes call_group et pickup_group, enregistrement de conversation (Ww), et messagerie vocale. Les utilisateurs pouvaient accéder à leur boîte via des touches dédiées, et les messages vocaux étaient transmis automatiquement à l'adresse mail de la secrétaire par un serveur Dovecot IMAP. Enfin, j'ai commencé la configuration d'un menu vocal interactif pour la prise de rendez-vous, avec enregistrement des messages via le téléphone Yealink. Bien que ce menu n'ait pas pu être finalisé (manque de l'intégration à un calendrier), les bases fonctionnelles étaient en place.",
+          "skills": "Ce projet m'a permis de maîtriser la configuration complète d'un serveur Asterisk, de la config SIP jusqu'à la gestion des fonctionnalités complexes d'un service ToIP. J'ai appris à manipuler les fichiers de configuration (pjsip_wizard.conf, extensions.conf, voicemail.conf, etc.) et à personnaliser les fonctions téléhponiques. Travailler avec différents types de terminaux m'a aussi familiarisé avec les interfaces d'administration de téléphones professionnels. Le plus gros défi a été de diagnostiquer les erreurs de configuration : une ligne mal placée pouvait bloquer tout un service. J'ai ainsi progressé en rigueur et dépannage. J'ai aussi découvert l'importance de la communication inter-sites dans un environnement d'entreprise, avec les problématiques de routage, d'authentification et de messagerie.\n\nD'un point de vue personnel, j'ai adoré réaliser cette SAE car on a mis en place une réelle infrastructure complète et fonctionnelle, le côté personnalisation a aussi été un point que j'ai aimé."
+        }
+      ]
+    }
+  ]
+}

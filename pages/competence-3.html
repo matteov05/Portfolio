@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétence 3 - Portfolio</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <span>Créer des outils et applications informatiques pour les R&T</span>
+        </nav>
+        <div class="section-header">
+          <h2>💻 Créer des outils et applications informatiques pour les R&T</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+          <div class="card">
+            <h3 style="margin-bottom: 12px;">Situations professionnelles :</h3>
+            <p id="comp-situations">[PLACEHOLDER - À ajouter]</p>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom: 12px;">SAE validant cette compétence :</h3>
+            <div id="comp-sae-list" style="color: var(--color-text-light);">[À ajouter]</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+          <div>
+            <h3 style="margin-bottom: 16px;">Les composantes essentielles :</h3>
+            <div class="card">
+              <div id="comp-composantes" style="color: var(--color-text-light);">[PLACEHOLDER - À ajouter]</div>
+            </div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 16px;">Les apprentissages critiques :</h3>
+            <div id="comp-ac"></div>
+          </div>
+        </div>
+
+        <section class="section">
+          <h3>Détail des SAE</h3>
+          <div class="card-grid" id="comp-sae-detail" style="margin-bottom: 40px;">
+            <!-- Bulles SAE générées par JavaScript -->
+          </div>
+        </section>
+
+        <!-- Entreprise - Vialis -->
+        <div class="card" style="margin-bottom: 32px; background-color: rgba(34, 197, 94, 0.05); border-left: 4px solid var(--color-accent);">
+          <h3 style="margin-bottom: 20px; color: var(--color-accent);">Entreprise - Vialis</h3>
+          
+          <p style="color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px;">
+            Dans le cadre de mon alternance chez Vialis, je ne suis pas directement impliqué dans des missions de développement ou de création d'outils informatiques. Mon travail est principalement orienté vers l'installation, la configuration et le dépannage des services réseau et télécoms chez les clients.
+          </p>
+          
+          <div style="margin-bottom: 20px;">
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Conception, déploiement et maintenance du système d'information d'une entreprise</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Cette activité ne fait pas partie de mes missions actuelles. Je n'interviens pas sur le système d'information interne de Vialis.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Automatisation du déploiement et de la maintenance des outils logiciels</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Je n'automatise pas et je ne déploie pas d'outils logiciels. Les interventions que je réalise sont manuelles (diagnostic sur le terrain, configuration de box, aide aux clients).
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: var(--color-accent); margin-bottom: 12px; font-size: 15px;">Développement d'outils informatiques à usage interne d'une équipe</h4>
+            <p style="color: var(--color-text-light); line-height: 1.8;">
+              Je ne participe pas au développement d'outils internes. Ce n'est pas une activité que je pratique dans mon service.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="../index.html" class="btn btn-secondary">Retour à l'accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const response = await fetch('../data/competences.json');
+        const data = await response.json();
+        const comp = data.competences[2]; // Compétence 3
+        
+        // Situations professionnelles - comme liste à puces
+        const sitElem = document.getElementById('comp-situations');
+        if (sitElem && comp.situations_professionnelles) {
+          const sitHTML = Array.isArray(comp.situations_professionnelles)
+            ? `<ul style="margin-left: 20px;">${comp.situations_professionnelles.map(s => `<li>${s}</li>`).join('')}</ul>`
+            : comp.situations_professionnelles;
+          sitElem.innerHTML = sitHTML;
+        }
+
+        // SAE validant - avec code surlighté
+        const saeListElem = document.getElementById('comp-sae-list');
+        if (saeListElem && comp.sae_validant && comp.sae_validant.length > 0) {
+          let saeHTML = '<ul style="margin-left: 20px;">';
+          comp.sae_validant.forEach(s => {
+            saeHTML += `<li><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${s.code}</strong></span> - ${s.text}</li>`;
+          });
+          saeHTML += '</ul>';
+          saeListElem.innerHTML = saeHTML;
+        }
+
+        // Composantes essentielles - avec code surlighté
+        const compElem = document.getElementById('comp-composantes');
+        if (compElem && comp.composantes_essentielles && comp.composantes_essentielles.length > 0) {
+          let compHTML = '<ul style="margin-left: 20px;">';
+          comp.composantes_essentielles.forEach(c => {
+            const style = 'background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;';
+            compHTML += `<li style="margin-bottom: 8px;"><span style="${style}"><strong>${c.code}</strong></span> | ${c.text}</li>`;
+          });
+          compHTML += '</ul>';
+          compElem.innerHTML = compHTML;
+        }
+
+        // AC - avec sections par année et code surlighté
+        const acElem = document.getElementById('comp-ac');
+        if (acElem) {
+          const acItems = [];
+          
+          if (comp.apprentissages_critiques.but1) {
+            let but1HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but1.items.forEach(ac => {
+              but1HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but1HTML += '</ul>';
+            acItems.push({
+              title: `BUT 1 : ${comp.apprentissages_critiques.but1.title}`,
+              content: but1HTML
+            });
+          }
+          
+          if (comp.apprentissages_critiques.but2) {
+            let but2HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but2.items.forEach(ac => {
+              but2HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but2HTML += '</ul>';
+            acItems.push({
+              title: `BUT 2 : ${comp.apprentissages_critiques.but2.title}`,
+              content: but2HTML
+            });
+          }
+          
+          if (comp.apprentissages_critiques.but3) {
+            let but3HTML = '<ul style="margin-left: 20px;">';
+            comp.apprentissages_critiques.but3.items.forEach(ac => {
+              but3HTML += `<li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>${ac.code}</strong></span> | ${ac.text}</li>`;
+            });
+            but3HTML += '</ul>';
+            acItems.push({
+              title: `BUT 3 : ${comp.apprentissages_critiques.but3.title}`,
+              content: but3HTML
+            });
+          }
+
+          if (acItems.length > 0) {
+            acElem.innerHTML = Component.createAccordion(acItems);
+            initAccordions();
+          }
+        }
+
+        // SAE Detail - Bulles avec le même design que les compétences
+        const saeDetailGrid = document.getElementById('comp-sae-detail');
+        if (saeDetailGrid) {
+          const saeDetailData = [
+            {
+              emoji: '🌐',
+              code: 'SAÉ1.04',
+              title: 'Se présenter sur Internet',
+              link: './sae1rom04.html'
+            },
+            {
+              emoji: '📊',
+              code: 'SAÉ1.05',
+              title: 'Traiter des données',
+              link: './sae1rom05.html'
+            },
+            {
+              emoji: '💻',
+              code: 'SAÉ2.03',
+              title: 'Mettre en place une solution informatique',
+              link: './sae2rom03.html'
+            },
+            {
+              emoji: '📦',
+              code: 'SAÉ2.04',
+              title: 'Projet Intégratif (projet de fin de 1ère année)',
+              link: './sae2rom04.html'
+            },
+            {
+              emoji: '🌐',
+              code: 'SAE3.02_FA',
+              title: 'Développer des applications communicantes',
+              link: './sae3rom02fa.html'
+            },
+            {
+              emoji: '🎮',
+              code: 'SAE 5.02',
+              title: 'Piloter un projet informatique',
+              link: './sae5rom02.html'
+            }
+          ];
+          
+          saeDetailGrid.innerHTML = saeDetailData.map(sae => `
+            <div class="card">
+              <div style="font-size: 24px; margin-bottom: 12px;">${sae.emoji}</div>
+              <h3 style="font-size: 14px; margin-bottom: 8px;">${sae.code}</h3>
+              <p style="font-size: 13px; color: var(--color-text-light); margin-bottom: 12px;">${sae.title}</p>
+              <a href="${sae.link}" class="btn btn-secondary btn-sm">
+                Voir en détail
+              </a>
+            </div>
+          `).join('');
+        }
+      } catch (error) {
+        console.error('Erreur:', error);
+      }
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>

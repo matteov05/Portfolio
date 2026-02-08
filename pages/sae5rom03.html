@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAE5.ROM.03 - Déployer et gérer les services ROM</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Portfolio</a>
+      <nav>
+        <button class="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">Compétences ▼</button>
+            <ul class="dropdown-menu">
+              <li><a href="./competence-1.html" class="dropdown-item">1. Administrer les réseaux et l'Internet</a></li>
+              <li><a href="./competence-2.html" class="dropdown-item">2. Connecter les entreprises et les usagers</a></li>
+              <li><a href="./competence-3.html" class="dropdown-item">3. Créer des outils et applications informatiques pour les R&T</a></li>
+              <li><a href="./competence-4.html" class="dropdown-item">4. Gérer les infrastructures et les services des réseaux opérateurs</a></li>
+              <li><a href="./competence-5.html" class="dropdown-item">5. Gérer les communications unifiées et la vidéo sur Internet</a></li>
+            </ul>
+          </li>
+          <li><a href="./liste-sae.html" class="nav-link">Liste des SAE</a></li>
+          <li><a href="./cv.html" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="../index.html">Accueil</a> <span>/</span> <a href="./competence-4.html">Compétence 4</a> <span>/</span> <span>SAE5.ROM.03</span>
+        </nav>
+
+        <div class="section-header">
+          <h2>SAE5.ROM.03 - Déployer et gérer les services ROM</h2>
+        </div>
+
+        <!-- Image SAE en haut -->
+        <div style="text-align: center; margin-bottom: 32px;">
+          <img src="../assets/note503.png" alt="SAE5.ROM.03" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+        </div>
+
+        <!-- Objectifs -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Objectifs du projet</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            L'objectif de cette SAE était de déployer, administrer et superviser des services multimédias avancés comme pourrait le faire un opérateur ou une entreprise. Le projet intégrait de la virtualisation, de la gestion de services vidéo, et de l'exploitation d'intelligence artificielle. Ici il a fallu mettre en place un système complet de vidéoprotection reposant sur frigate. Frigate est capable de gérer plusieurs caméras réseau et d'avoir des fonctionnalités avancées comme la détection de mouvement, la reconnaissance d'objets, la reconnaissance faciale, la lecture de plaques d'immatriculation et la recherche sémantique.
+          </p>
+        </div>
+
+        <!-- Apprentissages Critiques -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Apprentissages Critiques appliqués</h3>
+          <ul style="margin-left: 20px; color: var(--color-text-light);">
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC34.01ROM</strong></span> | Lors de l'administration et de la supervision de Frigate, incluant la gestion des caméras, des flux vidéo, des enregistrements et des événements détectés.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC34.02ROM</strong></span> | Déploiement du conteneur, intégration de Frigate, et de MQTT.</li>
+            <li style="margin-bottom: 8px;"><span style="background-color: rgba(124, 58, 237, 0.15); padding: 2px 6px; border-radius: 3px;"><strong>AC35.01ROM</strong></span> | En configurant la vidéoprotection, la détection de mouvement, la reconnaissance faciale, la lecture de plaques et la recherche sémantique comme pourrait le faire une entreprise spécialisée.</li>
+          </ul>
+        </div>
+
+        <!-- Réalisation -->
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Réalisation</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8; white-space: pre-wrap;">
+Nous avons mis en place un environnement Frigate VMS, basé sur un conteneur, permettant de gérer les flux vidéo venant de plusieurs caméras IP de la salle de TP. Les flux vidéo étaient récupérés via le protocole RTSP, puis traités par Frigate à l'aide de FFmpeg pour l'analyse, l'enregistrement et la détection d'événements.
+
+La configuration de frigate a été faite dans un fichier YAML, où nous avons défini :
+
+• les caméras et leurs flux vidéo
+• les rôles des flux (détection, enregistrement)
+• la détection de mouvement avec des masques de mouvement permettant d'exclure certaines zones
+
+Nous avons ajouté ensuite plusieurs fonctionnalités avancées :
+
+• la reconnaissance d'objets (personnes, clavier, voiture etc...) grâce à des modèles IA
+• la reconnaissance faciale permettant d'identifier des visages connus avec entraînement
+• la lecture de plaques d'immatriculation notamment à partir de vidéo que nous avons intégré à la place d'une caméra
+• la recherche sémantique, pour rechercher des événements enregistrés spéciaux
+• la reconnaissance de l'objet "bombe". C'est une réplique de bombe qu'on a en salle de classe. Le but était de créer un modèle entraîné permettant de la reconnaître. Nous n'avons malheureusement pas réussi à réaliser cette partie du projet malgré le temps consacré.
+
+Le système utilisait plusieurs CPU, et utilisait MQTT pour la communication des événements. Au final le projet permettait une supervision centralisée des caméras de la salle, une consultation des enregistrements, et une analyse intelligente des images filmées. En parallèle, nous avons du rédiger un rapport manuscrit détaillé avec toutes nos config et ce qu'on faisait. J'ai personnellement écrit 29 pages pour ce rapport, expliquant l'architecture, le fonctionnement de Frigate, les mécanismes d'IA, ainsi que les résultats obtenus.
+          </p>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="card" style="margin-bottom: 32px;">
+          <h3 style="margin-bottom: 16px; color: var(--color-primary);">Compétences et apprentissages développés</h3>
+          <p style="color: var(--color-text-light); line-height: 1.8;">
+            Cette SAE m'a permis de développer des compétences en administration de services multimédias, surtout dans la vidéoprotection sur IP. J'ai appris à déployer et configurer un VMS, à comprendre les flux vidéo, leur traitement, et les problèmes liées aux performances et aux ressources matérielles avec la charge CPU qui a pu poser problème durant le TP. Le travail sur Frigate m'a permis de mieux comprendre l'utilisation de l'intelligence artificielle, notamment pour la détection, et la reconnaissance d'événements. Je me suis également amélioré sur l'écriture d'un fichier de configuration, la gestion des flux RTSP, et la supervision des services. Enfin, la rédaction du rapport m'a permis de retranscrire mon travail, de mieux l'intégrer, et de me rendre compte de l'importance de la vidéoprotection et de ces caractéristiques, comme sa fiabilité, sa charge système et l'exploitation des données vidéo.
+          </p>
+        </div>
+
+        <!-- Image bombe en bas -->
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 32px;">
+          <img src="../assets/bombe.png" alt="Reconnaissance bombe" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);">
+          <div style="margin-top: 12px; color: var(--color-text-light); font-size: 13px;"><em>Réplique de bombe</em></div>
+        </div>
+
+        <!-- PDF du code -->
+        <div style="text-align: center; margin-top: 32px; margin-bottom: 32px;">
+          <iframe src="../assets/code503.pdf" style="width: 100%; height: 600px; border: 1px solid #e0e0e0; border-radius: 8px;"></iframe>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="./competence-4.html" class="btn btn-secondary">Retour à la compétence 4</a>
+          <a href="../index.html" class="btn btn-primary" style="margin-left: 12px;">Accueil</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section"><h3>Portfolio</h3><p>BUT Réseaux & Télécoms<br/>Parcours ROM - 3e année</p></div>
+      <div class="footer-section"><h3>Navigation</h3><ul style="list-style: none;"><li><a href="../index.html">Accueil</a></li><li><a href="./competence-1.html">Compétences</a></li><li><a href="./cv.html">CV</a></li></ul></div>
+      <div class="footer-section"><h3>Contact</h3><ul style="list-style: none;"><li><a href="mailto:contact@example.com">Email</a></li><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Portfolio. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="../js/components.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMenuToggle();
+      initDropdownMenu();
+    });
+  </script>
+</body>
+</html>
